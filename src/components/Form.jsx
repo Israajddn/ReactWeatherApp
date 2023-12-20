@@ -1,5 +1,8 @@
 import React from 'react';
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
+import './weatherApp.css';
+import search_img from '../Assets/search.png';
+
 
 export default function Form(props) {
 
@@ -23,14 +26,17 @@ export default function Form(props) {
 
     return (
         <div className='Form'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="search-bar">
                 <input
                     type="text"
                     name="location"
                     onChange={handleChange}
                     value={formData.location}
+                    placeholder='Search'
                 />
-                <input type="submit" value="submit" />
+                <div className="search-img" onClick={handleSubmit}>
+                    <img src={search_img} />
+                </div>
             </form>
         </div>
     )

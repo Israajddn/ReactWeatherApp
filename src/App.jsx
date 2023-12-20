@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import './components/weatherApp.css';
 
 // Import components
 import WeatherDisplay from "./components/WeatherDisplay";
