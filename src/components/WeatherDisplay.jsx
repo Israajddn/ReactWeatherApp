@@ -16,7 +16,7 @@ export default function WeatherDisplay({ weather }) {
                 {/* display location */}
                 <div className="location">{weather.name}</div>
                 {/* display temperature */}
-                <div className="temp">{weather.main.temp}</div>
+                <div className="temp">{weather.main.temp.toFixed()}</div>
                 {/* display description */}
                 <div className="description">{weather.weather[0].description}</div>
                 {/* display data */}
@@ -33,7 +33,7 @@ export default function WeatherDisplay({ weather }) {
                     <div className="element">
                         <img src={wind} alt="" className="img" />
                         <div className="data">
-                            <div className="wind">{weather.wind.speed} MPH</div>
+                            <div className="wind">{weather.wind.speed.toFixed()} MPH</div>
                             <div className="text">Wind Speed</div>
                         </div>
                     </div>
