@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import './weatherApp.css';
 import search_img from '../Assets/search.png';
 

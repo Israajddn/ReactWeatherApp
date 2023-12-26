@@ -20,7 +20,7 @@ export default function App() {
     );
     // Parse JSON response into a JavaScript object
     const data = await response.json();
-    // Set the Movie state to the received data
+    // Set the weather state to the received data
     setWeather(data);
   } catch(e) {
 		console.error(e)

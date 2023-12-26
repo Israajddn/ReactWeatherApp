@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from "react";
 import './weatherApp.css';
 import wind from '../Assets/wind.png';
 import humidity from '../Assets/humidity.png';
@@ -16,7 +15,7 @@ export default function WeatherDisplay({ weather }) {
                 {/* display location */}
                 <div className="location">{weather.name}</div>
                 {/* display temperature */}
-                <div className="temp">{weather.main.temp.toFixed()}</div>
+                <div className="temp">{weather.main.temp.toFixed()} °F</div>
                 {/* display description */}
                 <div className="description">{weather.weather[0].description}</div>
                 {/* display data */}
