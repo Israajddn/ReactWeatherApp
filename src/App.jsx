@@ -6,7 +6,7 @@ import WeatherDisplay from "./components/WeatherDisplay";
 import Form from "./components/Form";
 export default function App() {
 
-  const API_KEY = "ceee45ecf500e346c5e91b1fe7c66196";
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   // State to hold weather data
   const [weather, setWeather] = useState(null);
