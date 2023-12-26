@@ -22,7 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-apiKey.jsx
 
 # api keys
 .env
