@@ -1,12 +1,13 @@
 import {useState, useEffect} from "react";
 import './components/weatherApp.css';
+import WEATHER_API_KEY  from './apiKey.jsx'
 
 // Import components
 import WeatherDisplay from "./components/WeatherDisplay";
 import Form from "./components/Form";
 export default function App() {
 
-  const API_KEY = import.meta.env.VITE_API_KEY;
+  const API_KEY = WEATHER_API_KEY ;
 
   // State to hold weather data
   const [weather, setWeather] = useState(null);
