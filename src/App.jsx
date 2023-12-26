@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import './components/weatherApp.css';
-import WEATHER_API_KEY  from './apiKey.jsx'
 
 // Import components
 import WeatherDisplay from "./components/WeatherDisplay";
